@@ -1,0 +1,85 @@
+﻿@model IEnumerable<DoConnect.Models.Question>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<br />
+<br />
+<br />
+<div class="container-fluid">
+    <div class="row">
+        @using (Html.BeginForm())
+        {
+            <div class="form-horizontal">
+                <div class="form-group">
+                    @Html.Label("Search", new { @class = "col-md-2 controller-label" })
+                    <div class="col-md-6">
+                        @Html.TextBox("searchTxt", null, new { @class = "form-control", @style = "max-width: 100%", @placeholder = "Search your text here" })
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="btn-btn-primary"><span class="glyphicon glyphicon-search"></span> Search</button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-bordered table-striped">
+                <tr>
+
+        
+                    <th>
+                        @Html.ActionLink("Question Id", "Index", new { SortOrder = ViewBag.SortOrder == null ? "Asc" : (ViewBag.SortOrder == "Asc" ? "Desc" : "Asc"), SortBy = "Id" })
+
+                    <th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Question1)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Category)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.UserName)
+                    </th>
+                    <th></th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Id)
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Question1)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Category)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UserName)
+                        </td>
+                        
+                        <th>
+                            
+                            @Html.ActionLink("Click here to Answer the Question", "Create", "CRUDMVCforANS")
+                        </th>
+                    </tr>
+                }
+
+
+            </table>
+        </div>
+    </div>
+</div>
+<br />
+
+

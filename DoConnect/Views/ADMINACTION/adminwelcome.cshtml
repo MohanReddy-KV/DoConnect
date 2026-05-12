@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "adminwelcome";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>
+    Welcome ADMIN
+
+</h2>
+
+
+@Html.ActionLink("Crud operations on Questions", "Index", "CrudMvc")
+<br />
+<br />
+@Html.ActionLink("Crud operations on Answers", "Index", "CRUDMVCforANS")
+<br />
+<br />
+@Html.ActionLink("Crud operations on Users", "Index", "CRUDMVCforUSER")
+<br />
+<br />
+<br />
+
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav" style="float:right !important">
+        @if (Session["Username"] != null)
+        {
+            <li><p style="color:red; margin-top:15px;">Hello @Session["Username"]</p></li><li>@Html.ActionLink("Logout", "logout", "ADMINACTION")</li>
+        }
+    </ul>
+</div>

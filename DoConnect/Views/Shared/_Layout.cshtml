@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body style="background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHQArgMBIgACEQEDEQH/xAAZAAADAQEBAAAAAAAAAAAAAAAAAgMBBAf/xAAlEAACAgICAgICAwEAAAAAAAAAAQIRITEDEkFRYXEiMhMjgZH/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QAHREBAQEBAQEBAQEBAAAAAAAAAAERAjEhQRJRA//aAAwDAQACEQMRAD8A9W5OWC839GRjF5aeSfS2WTw36OzP8c8u+sk/yx4ElJvD0KpPs5ex5NOmvIZhy6m4VrQ3Gk3nKBvBnHcW21gf4qL46tCPi8xQKfZl45RnbY1gg15eQasSaTlh48jLGibP1rGqIyVZMTCTwRWsanYLLJ3RRYRFVWtE5rwO2JIg4koU2wawNYyXsS9Qd1gEW5cQ/wBJE1Uuw12qCKb+AjQ7foElirbwN/Gmqeg42uzRRs768iJvhitInLjOlZROQS05I507xRfonxuPkn1/srwWi60Po45oei8b602CSi319mpPyierrXliiikUg6s1KlsitZRSMaNV+QeyWvNTayiz0LVk52yKv1s5pfP0J3Txkbp+NEoKp0xYqSHaKLSJTmo7HjNSWCbBZWc2iKeaH5J5oQnFc+EypbG/kkvNivY0MOthYv4rGMtmdndHRGKolyxSnj0d8u14PkI+SS0ykH23sSjVh4HYJVOqeQjHCYjk2qei3E/6/oi7GspFHyMgU1F5Cb/G0TZWkp6FbyLdptCOxY15VbpWRc6dmZZjVDx0cSOlaEaVmx/VE+a8fRlZ9E9NJolJ5syLbeWbKDWQzFySJNdmNXV2sDKKWbyJOVulpE1frOub2PFmRt5GhH81ehC1OcGna0TunZ3qqrBzcvA+1wyvQhz3PK6U6Fmrdj+R+uDr3HhZqA0YD9ers216DTkxnXAjTSKpoyStYaE0iDV7Gj6GoLcXfkq1XLHHq9/4akmsBlq2CJbcs60xZ0UYrjkTp5vxsHSpoXlaccZKONmKEadrJkez1BbF5Jt4WEWlFr6J8kbyG6uWajyQ9AoypYZdoZxwK1X9pQwnYDsWrJDGsgor6NsXk8AI6ZbGt1hiNjQOl4Uv0yt7ZjXkY3aqhapEE3Yyi26SKx4lX5DvUKbSrKwD42WSS0Y2T/TaEXEvZn8fplFJIFkna2lRcGvBi2dDQvQWt+ekwSsfohJWv1wTpy6JIk1Wxu785Mku7T18CVNhJRzga41Vr/oSSjF0JFWvkPVeiVeGCQdXeB1Fk07UpIlN3I6JpkZRqQ5V810uOLCLS2wbwk/QvXODo/Hzn9/V4TTVobsLBJRpGkOiWlk6l8GxlkTku1RsU2UUv1W8CqxoRT2ElXkS5WWNEmtjW0KteadgmL2GRNbysbsVxtDUZaI1cR61Y0Y4HcTYqkGq1OULVEoQp0dItK7FonSdezaHayK8BT0jROcbosqYdRKlwklfGn6MWCkML4Ebip09G2vBvP7FY/rYk5Pw8G61ox5VBF2/MEV+Is24yTi6wVUfxX0YuNyn8JD0fzcw8ZvpevkyN3bY0lSMUXQau7CtjLIOODEKteKeEaGoxPGQciXTy0WgrTNJaQUFAaIMrAtFDKENLVi4fimUJyVCOM6G9RoDNCGuWbqVEp/szQNo8XpTi/UcAKazxSInZ92AE8r68hrvDBNgBZBtjceYgBNbf8vTeQYARW/IWkYACaQeDVoAEAjQAAGJIAJvhxltaC2/JgEG/9k='); ">
+
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand">
+                <img src="~/Images/doconnect.jfif" @*title="title" alt=""*@ width="50" 
+     height="40" />
+            </a>
+            @Html.ActionLink("Do Connect", "Index", "USERACTION", new { area = "" }, new { @class = "navbar-brand" })
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    @*<li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>*@
+                    @*<li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, new { @class = "nav-link" })</li>*@
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" style="float:right !important">
+                    @if (Session["Username"] != null)
+                    {
+                        <li><p style="color:red; margin-top:15px;">Hello @Session["Username"]</p></li>
+
+
+                        <li>@Html.ActionLink("Logout", "logout", "USERACTION")</li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - DO Connect</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
