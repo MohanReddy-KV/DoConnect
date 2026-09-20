@@ -1,12 +1,12 @@
 # DoConnect
 
-> A question-and-answer web application built as an HCLTech training capstone project.
+> A question-and-answer web application built as an training capstone project.
 
 ## Overview
 
 DoConnect is an ASP.NET MVC application where users can work with questions and answers. It includes separate user and administrator flows, question search, and management screens for core application data.
 
-This project was created during my HCLTech training and represents my hands-on learning with the MVC pattern, C#, SQL Server, and server-rendered web applications.
+This project was created during my training and represents my hands-on learning with the MVC pattern, C#, SQL Server, and server-rendered web applications.
 
 ## Technology Stack
 
