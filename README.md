@@ -1,6 +1,6 @@
 # DoConnect
 
-> HCLTech training capstone project built with ASP.NET MVC, C#, and SQL Server.
+> Training capstone project built with ASP.NET MVC, C#, and SQL Server.
 
 ## Overview
 
