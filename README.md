@@ -4,7 +4,7 @@
 
 ## Overview
 
-DoConnect is a web application created as part of my HCLTech training capstone. It helped me practice building a structured .NET web application using the MVC pattern, connecting application logic to a SQL Server database, and working with server-rendered views.
+DoConnect is a web application created as part of my training capstone. It helped me practice building a structured .NET web application using the MVC pattern, connecting application logic to a SQL Server database, and working with server-rendered views.
 
 This repository is preserved as part of my learning and development journey.
 
